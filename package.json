@@ -1,0 +1,67 @@
+{
+  "name": "maps",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.10.0",
+    "@material-ui/icons": "^4.9.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "aos": "^2.3.4",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cogo-toast": "^4.2.3",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "edit-json-file": "^1.4.0",
+    "express": "^4.17.1",
+    "geojson-polygon-center": "0.0.0",
+    "history": "^4.10.1",
+    "i": "^0.3.6",
+    "leaflet": "^1.6.0",
+    "leaflet-geometryutil": "^0.9.3",
+    "material-ui": "^0.20.2",
+    "material-ui-dropzone": "^3.0.0",
+    "mongodb": "^3.5.8",
+    "mongoose": "^5.9.17",
+    "nodemon": "^2.0.4",
+    "npm": "^6.14.5",
+    "point-in-polygon": "^1.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-fade-in": "^1.0.0",
+    "react-files": "^2.4.8",
+    "react-leaflet": "^2.7.0",
+    "react-leaflet-control": "^2.1.2",
+    "react-leaflet-distance-marker": "^0.1.1",
+    "react-lottie": "^1.2.3",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-window": "^1.8.5",
+    "spherical-geometry-js": "^2.0.0",
+    "styled-components": "^5.1.0"
+  },
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon --ignore ./client server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
